@@ -65,8 +65,8 @@ resource "aws_sqs_queue" "main" {
 resource "aws_sqs_queue_policy" "main_policy" {
   for_each = var.queues
 
-  queue_url  = aws_sqs_queue.main[each.key].id
-  policy     = try(each.value.sqs_queue_policy, local.policies[each.key].main_policy)
+  queue_url = aws_sqs_queue.main[each.key].id
+  policy    = try(each.value.sqs_queue_policy, local.policies[each.key].main_policy)
 }
 
 resource "aws_sns_topic" "this" {
@@ -83,7 +83,7 @@ resource "aws_sns_topic" "this" {
 }
 
 resource "aws_sns_topic_subscription" "this" {
-  for_each =  var.queues
+  for_each = var.queues
 
   topic_arn              = aws_sns_topic.this[each.key].id
   protocol               = try(each.value.protocol, "sqs")
