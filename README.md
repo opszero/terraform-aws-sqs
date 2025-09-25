@@ -53,13 +53,13 @@ module "sqs_queues" {
 ```
 
 ## Example
-For detailed examples on how to use this module, please refer to the [Examples](https://github.com/opszero/terraform-aws-sqs/tree/master/example) directory within this repository.
+For detailed examples on how to use this module, please refer to the [Examples](https://github.com/opszero/terraform-aws-sqs/tree/main/example) directory within this repository.
 
 ## Author
 Your Name Replace **MIT** and **Cypik** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
 
 ## License
-This project is licensed under the **MIT** License - see the [LICENSE](https://github.com/opszero/terraform-aws-sqs/blob/master/LICENSE) file for details.
+This project is licensed under the **MIT** License - see the [LICENSE](https://github.com/opszero/terraform-aws-sqs/blob/main/LICENSE) file for details.
 
 <!-- BEGIN_TF_DOCS -->
 
