@@ -18,7 +18,7 @@ To use this module, you can include it in your Terraform configuration. Here's a
 
 ## Example: sqs_queues
 ```hcl
-module "cdn" {
+module "sqs_queues" {
   source  = "git::https://github.com/opszero/terraform-aws-sqs.git?ref=v1.0.1"
   tags    = {
     Env = "Prod"
