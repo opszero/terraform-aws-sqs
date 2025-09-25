@@ -3,9 +3,8 @@ variable "queues" {
   type        = any
   default     = {}
 }
-
+# tflint-ignore: terraform_typed_variables
 variable "tags" {}
-
 
 variable "enable_redrive_policy" {
   type    = bool
